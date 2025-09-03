@@ -39,10 +39,10 @@ class TodoApp {
             this.tasks = await response.json();
             this.renderTasks();
             this.updateStats();
-        } catch (error) {
-            console.error('Error loading tasks:', error);
-            this.showError('Failed to load tasks. Please refresh the page.');
-        }
+            } catch (error) {
+      console.error('Error loading tasks:', error);
+      this.showError('Failed to load tasks. Please check your MongoDB connection.');
+    }
     }
 
     async addTask() {

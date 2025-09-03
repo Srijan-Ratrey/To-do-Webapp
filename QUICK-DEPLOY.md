@@ -27,9 +27,10 @@ git push -u origin main
 2. Create free account
 3. Create cluster (choose "Shared" - free tier)
 4. Create database user
-5. Whitelist IP (0.0.0.0/0 for development)
+5. Whitelist IP (0.0.0.0/0 for development) //122.171.18.130/32
 6. Get connection string
 7. Add to Vercel environment variables
+mongodb+srv://srijanratrey512_db_user:<db_password>@cluster0.wd3oj46.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
 
 **That's it! Your app is live! 🎉**
 
