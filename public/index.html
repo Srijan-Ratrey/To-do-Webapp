@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo MVP</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📝 Todo MVP</h1>
+            <p>A simple and effective task management app</p>
+        </header>
+
+        <div class="add-task-section">
+            <div class="input-group">
+                <input 
+                    type="text" 
+                    id="taskInput" 
+                    placeholder="What needs to be done?" 
+                    maxlength="200"
+                >
+                <button id="addTaskBtn" class="btn btn-primary">Add Task</button>
+            </div>
+        </div>
+
+        <div class="tasks-section">
+            <div class="tasks-header">
+                <h2>Your Tasks</h2>
+                <div class="task-stats">
+                    <span id="totalTasks">0</span> total, 
+                    <span id="completedTasks">0</span> completed
+                </div>
+            </div>
+
+            <div id="tasksList" class="tasks-list">
+                <!-- Tasks will be dynamically inserted here -->
+            </div>
+
+            <div id="emptyState" class="empty-state">
+                <div class="empty-icon">📋</div>
+                <h3>No tasks yet</h3>
+                <p>Add your first task above to get started!</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
